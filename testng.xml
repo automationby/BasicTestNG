@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  
+  <test name="TestFF">
+  <parameter name="url" value="https://www.freecrm.com/index.html"/>
+   <parameter name="browser" value="firefox" />
+  <groups> 
+	    <run> 
+		<include name="menu" /> 
+	    </run> 
+	</groups>
+    <classes>   
+      <class name="com.testng.launch">     
+       </class>
+    </classes>
+  </test> <!-- Test -->
+  <test name="TestCH">
+  <parameter name="url" value="https://www.freecrm.com/index.html"/>
+   <parameter name="browser" value="chrome" />
+  <groups> 
+	    <run> 
+		<include name="menu" /> 
+	    </run> 
+	</groups>
+    <classes>   
+      <class name="com.testng.launch">     
+       </class>
+    </classes>
+  </test> <!-- Test -->
+  <test name="TestIE">
+  <parameter name="url" value="https://www.freecrm.com/index.html"/>
+   <parameter name="browser" value="ie" />
+  <groups> 
+	    <run> 
+		<include name="menu" /> 
+	    </run> 
+	</groups>
+    <classes>   
+      <class name="com.testng.launch">     
+       </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+ 
+   

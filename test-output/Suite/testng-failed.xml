@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="TestFF(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="https://www.freecrm.com/index.html"/>
+    <groups>
+      <run>
+        <include name="menu"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.testng.launch">
+        <methods>
+          <include name="changeMenu2"/>
+          <include name="changeMenu1"/>
+          <include name="changeMenu3"/>
+        </methods>
+      </class> <!-- com.testng.launch -->
+    </classes>
+  </test> <!-- TestFF(failed) -->
+  <test thread-count="5" name="TestIE(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <parameter name="url" value="https://www.freecrm.com/index.html"/>
+    <groups>
+      <run>
+        <include name="menu"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.testng.launch">
+        <methods>
+          <include name="changeMenu2"/>
+          <include name="changeMenu1"/>
+          <include name="changeMenu3"/>
+        </methods>
+      </class> <!-- com.testng.launch -->
+    </classes>
+  </test> <!-- TestIE(failed) -->
+  <test thread-count="5" name="TestCH(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.freecrm.com/index.html"/>
+    <groups>
+      <run>
+        <include name="menu"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.testng.launch">
+        <methods>
+          <include name="changeMenu2"/>
+          <include name="changeMenu1"/>
+          <include name="changeMenu3"/>
+        </methods>
+      </class> <!-- com.testng.launch -->
+    </classes>
+  </test> <!-- TestCH(failed) -->
+</suite> <!-- Failed suite [Suite] -->
